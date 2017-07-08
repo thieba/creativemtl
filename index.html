@@ -2,25 +2,42 @@
 <head>
 
 <style>
+body { font-family: Lato;}
 .hint-of-red { 	background-color: #F8F5F5;}
-.about { max-width: 800px; margin: auto;}
-section { height: 100%;}
-.about h2 {	color: #000000;	font-family: Rubik;	font-size: 42px;	font-weight: bold;	line-height: 28px;	text-align: center;}
+.about { max-width: 880px; margin: auto;}
+section { min-height: 100%;}
+.about h2 {	color: #000000;	font-family: Rubik;	font-size: 42px;	font-weight: bold;	line-height: 28px;	text-align: center; margin-bottom: 38px;}
 .about h4 {	color: #000000;	font-family: Lato;	font-size: 24px;	font-weight: bold;	line-height: 38px;	text-align: center;}
+.logo { margin-top: 90px; margin-left: auto; margin-right: auto; margin-bottom: 170px; display: block; }
+.test { height: 76px; width: 768.74px; color: #000000; font-size: 24px; font-weight: bold; line-height: 38px; text-align: center;}
+.email-subscription { height: 60px; }
+.email-subscription input { height: 100%; }
+.email-subscription button { height: 100%; 	font-weight: bold;	line-height: 22px;	text-align: center; border-radius: 4px; font-family: Rubik; }
 </style>
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Lato|Rubik" rel="stylesheet">
 </head>
 <body>
-<main class="about">
+<main class="container-fluid">
 <section class="row hint-of-red">
-	<div class="col-md-10 col-md-offset-1">
-		<h2>Ateliers & cours créatifs à Montréal</h2>
-		<h4>Sur CreativeMtl vous trouverez toutes les activités créatives proposées à Montréal. Vous voulez être tenu informé lorsque le site sera lancé ?</h4>
+	<div class="about">
+		<div class="col-md-10 col-md-offset-1">
+			<img class="logo" src="svg/logo.svg" alt="CreativeMTL Logo">
+			<h2>Ateliers & cours créatifs à Montréal</h2>
+			<h4>Sur CreativeMtl vous trouverez toutes les activités créatives proposées à Montréal. Vous voulez être tenu informé lorsque le site sera lancé ?</h4>
+		</div>
+		<div class="col-md-8 col-md-offset-2">
+			<form>
+				<div class="input-group email-subscription">
+					<input class="form-control" placeholder="Mon courriel">
+					<span class="input-group-btn">
+					<button class="btn btn-info">Ça m’intéresse !</button>
+					</span>
+				</div>
+			</form>
+		</div>
 	</div>
-</section>
-<section class="row ">
-	<p>test</p>
 </section>
 </main>
 <footer>
