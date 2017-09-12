@@ -5,14 +5,46 @@
 body { font-family: Lato;}
 .hint-of-red { 	background-color: #F8F5F5;}
 .about { max-width: 880px; margin: auto;}
-section { min-height: 100%;}
+section { min-height: 100%; padding-top: 50px; padding-bottom: 50px;}
 .about h2 {	color: #000000;	font-family: Rubik;	font-size: 42px;	font-weight: bold;	line-height: 28px;	text-align: center; margin-bottom: 38px;}
+.about h3 { color: #000000; font-family: Rubik; font-size: 30px;	font-weight: bold;	line-height: 36px;	text-align: center; margin-bottom: 50px;}
 .about h4 {	color: #000000;	font-family: Lato;	font-size: 24px;	font-weight: bold;	line-height: 38px;	text-align: center;}
 .logo { margin-top: 90px; margin-left: auto; margin-right: auto; margin-bottom: 170px; display: block; }
 .test { height: 76px; width: 768.74px; color: #000000; font-size: 24px; font-weight: bold; line-height: 38px; text-align: center;}
 .email-subscription { height: 60px; }
 .email-subscription input { height: 100%; }
 .email-subscription button { height: 100%; 	font-weight: bold;	line-height: 22px;	text-align: center; border-radius: 4px; font-family: Rubik; }
+.illustration { width: 100% }
+.arrow-down {
+  display: block;
+  margin: auto;
+  margin-top: 25px;
+  width: 0;
+  height: 0;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  
+  border-top: 40px solid #E8E5E5;
+}
+
+p { color: #000000; font-family: Lato; font-size: 16px; line-height: 25px; font-weight: bold; }
+
+footer {text-align: center;}
+
+.categories { min-height: 15%; background-color: #D8D8D8 }
+.row.display-flex {
+	display: flex;
+	flex-wrap: wrap;
+  }
+.row.display-flex > [class*='col-'] {
+flex-grow: 1;
+margin-bottom: 45px;
+}
+.description {
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
 </style>
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -37,10 +69,56 @@ section { min-height: 100%;}
 				</div>
 			</form>
 		</div>
+		<br/>
+		<br/>
+		<div class="col-md-12">
+			<span class="arrow-down"></span>
+		</div>
 	</div>
 </section>
+<section class="row">
+	<div class="about">
+		<h3>C'est quoi exactement ?</h3>
+		<div class="row display-flex">
+			<div class="col-md-6">
+				<img class="illustration" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Stamping_on_Leather.jpg/800px-Stamping_on_Leather.jpg" />
+			</div>
+			<div class="col-md-6 description">
+				<h4>Des cours et ateliers pour tous</h4>
+				<p>Pour vous-même, peu importe votre âge, pour vos enfants, ou pourquoi pas pour faire un cadeau original. Sur CreativeMtl vous pourrez rechercher des cours et ateliers créatifs par tranche d’âge.</p>
+			</div>
+			<div class="col-md-6 col-md-push-6">
+				<img class="illustration" src="https://upload.wikimedia.org/wikipedia/commons/3/32/Arthur_Lismer_-_Minesweepers%2C_Halifax_CWM_19710261-0342.jpg" />
+			</div>
+			<div class="col-md-6 col-md-pull-6 description">
+				<h4>Près de chez vous</h4>
+				<p>Recherchez une activité dans votre quartier. Parce-que ne pas avoir besoin d’aller courir à l’autre bout de la ville pour un cours d’écriture créative ou de céramique (en autres !), c’est quand même plus pratique. </p>
+			</div>
+			<div class="col-md-6">
+				<img class="illustration" src="https://upload.wikimedia.org/wikipedia/commons/3/32/Arthur_Lismer_-_Minesweepers%2C_Halifax_CWM_19710261-0342.jpg" />
+			</div>
+			<div class="col-md-6 description">
+				<h4>Des activités de qualité</h4>
+				<p>Dans un premier temps nous voulons regrouper toute l’offre déjà disponible à Montréal. Les organisateurs que nous afficheront sur le site proposent déjà des cours et ateliers.</p>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="categories">
+</section>
 </main>
-<footer>
+<footer class="container-fluid">
+	<div class="row">
+		<div class="col-md-4">
+			<a href="hello@creativetl.com">nous contacter</a>
+		</div>
+		<div class="col-md-4">
+				
+		</div>
+		<div class="col-md-4">
+			<p>© CreativeMtl 2017 </p>
+		</div>
+	</div>
 </footer>
 </body>
 </html>
